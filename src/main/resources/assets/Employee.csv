@@ -1,0 +1,12 @@
+EmployeeID,EmployeeName,Title,BusinessUnit,Place,SupervisorID,Competencies,Salary
+756777,Naina Reddy,Developer,A,India,12,Java,75000
+625767,Nitin Reddy,Tech Lead,B,UK,34,Java,150000
+234644,Sudha Banakar,Sr.Developer,C,UK,56,Java,100000
+987678,Megha Hiremat,Sr.Developer,C,Canada,78,Java,100000
+125434,Ben Biju,Associate,D,UK,90,Java,50000
+432564,Noor Shazia,Tester,B,Japan,12,Testing,75000
+878987,Reshma Subramanya,UI Developer,A,Japan,34,UI,100000
+564645,Lavanya Muniyappa,Developer,A,India,56,Java,75000
+233433,Mahesh Sharma,Tech Lead,D,India,78,UI,150000
+334542,Mohan Ram,Manager,D,India,90,Manage,250000
+789809,Rajashekar Gopal ,Director,C,Canada,12,Manage,500000
