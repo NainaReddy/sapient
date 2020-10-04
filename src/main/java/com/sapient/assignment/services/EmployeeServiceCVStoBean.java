@@ -22,6 +22,9 @@ public class EmployeeServiceCVStoBean {
     @Autowired
     private ResourceLoader resourceLoader;
 
+    @Autowired
+    private EmployeeServiceImpl employeeService;
+
     @PostConstruct
     public void init(){
 
@@ -41,6 +44,8 @@ public class EmployeeServiceCVStoBean {
         try{
             CsvToBeanBuilder<Employee> csvToBeanBuilder = new CsvToBeanBuilder<>(new FileReader("src/main/resources/assets/Employee.csv"));
             employeeList = csvToBeanBuilder.withMappingStrategy(mappingStrategy).build().parse();
+            //dump employee list
+
         } catch (Exception e){
             e.getMessage();
         }
@@ -50,6 +55,7 @@ public class EmployeeServiceCVStoBean {
         System.out.println("------------------------------------------------------------------------------------------");
         for (Employee e: employeeList){
             System.out.println(e.toString());
+            employeeService.createEmployee(e);
         }
         System.out.println("------------------------------------------------------------------------------------------");
         System.out.println("---------------------------- CSV file has loaded successfully ----------------------------");
